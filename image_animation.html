@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css image animation</title>
+    <style>
+        body{
+            background-color: rgba(27, 31, 34, 0.85);
+        }
+        h1{
+            font-size: 2.1rem;
+            line-height: 1.4;
+            letter-spacing: 0.2rem;
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+        }
+        h1:hover{
+            color: black;
+            }
+        .maindiv{
+            width: 60%;
+            height: 500px;
+            position: absolute;
+            left: 50%;
+            top: 45%;
+            transform: translate(-50%, -50%);
+            background-image: url(https://th.bing.com/th/id/OIG.5_ebW0SgzUm3EyYN4zPS?pid=ImgGn&w=1024&h=1024&rs=1);
+            background-size: 100% 100%;
+            box-shadow: 12px 45px 60px 10px black;
+            animation: slider 9s infinite linear;
+        }
+
+        @keyframes slider{
+            0%{background-image: url(https://th.bing.com/th/id/OIG.44oUefZ79lABATGYKzmt?pid=ImgGn&w=1024&h=1024&rs=1);  }
+            35%{background-image: url(https://th.bing.com/th/id/OIG.SnMBTUis.v10Ed4aoAly?pid=ImgGn); }
+            75%{background-image: url(https://th.bing.com/th/id/OIG.2QNlpPuVsmYc63Zbjbay?pid=ImgGn);}
+        }
+    </style>
+</head>
+<body>
+    <h1>Image of forests and natural landscapes</h1>
+    <div class="maindiv">
+
+
+    </div>
+</body>
+</html>
